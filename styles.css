@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a i {
+    margin-right: 5px;
+}
+
+nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+nav ul li .btn {
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    background: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.hero .btn i {
+    margin-left: 5px;
+}
+
+.hero .btn:hover {
+    background: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+.hero-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.hero-content .btn:hover {
+    background-color: #0056b3;
+}

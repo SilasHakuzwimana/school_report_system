@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Report System</title>
+    <link rel="icon" href="images/360_F_319158029_4JKXm8ZJy7BaaciR3SB6ZuGxL1mVGPRA.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Additional styles can be placed here */
+        html {
+            scroll-behavior: smooth; /* Enable smooth scrolling for the whole document */
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Smooth scrolling for navigation links
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach((link) => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1); // Get target id from href attribute
+                    const targetElement = document.getElementById(targetId); // Find target element
+                    if (targetElement) {
+                        // Scroll to the target element smoothly
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+    
+            // Function to update copyright year and symbol
+            const currentYear = new Date().getFullYear();
+            const copyrightElement = document.getElementById('copyright');
+            if (copyrightElement) {
+                copyrightElement.innerHTML = `&copy; ${currentYear} School Report System. All Rights Reserved.`;
+            }
+    
+            // Smooth scrolling for Get Started button
+            const getStartedButton = document.querySelector('.hero-content .btn');
+            if (getStartedButton) {
+                getStartedButton.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const targetId = getStartedButton.getAttribute('href').substring(1); // Get target id from href attribute
+                    const targetElement = document.getElementById(targetId); // Find target element
+                    if (targetElement) {
+                        // Scroll to the target element smoothly
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            }
+        });
+    
+        // Function to redirect to user authentication page
+        function redirectToAuthentication() {
+            window.location.href = "user_authentication.php";
+        }
+        // Function to redirect to user home page
+        function redirectToHome() {
+            window.location.href = "#home.php";
+        }
+        // Function to redirect to about page
+        function redirectToAbout() {
+            window.location.href = "#about.php";
+        }
+        // Function to redirect to contact page
+        function redirectToContact() {
+            window.location.href = "#contact.php";
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/school_report_logo.jpg" alt="School Report System Logo">
+                School Report System
+            </div>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="redirectToHome()"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="javascript:void(0);" onclick="redirectToAbout()"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="javascript:void(0);" onclick="redirectToContact"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="javascript:void(0);" onclick="redirectToAuthentication()" class="btn"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the School Report System</h1>
+            <p>Efficiently manage and generate student reports</p>
+            <a href="javascript:void(0);" class="btn" onclick="redirectToAuthentication()"><i class="fas fa-arrow-right"></i> Get Started</a>
+        </div>
+    </section>
+    <footer>
+        <p id="copyright">&copy; 2024 School Report System. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
