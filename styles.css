@@ -7,6 +7,7 @@
 
 body {
     line-height: 1.6;
+    background: url('hero.jpg') no-repeat center center/cover;
 }
 
 header {
@@ -70,7 +71,7 @@ nav ul li .btn {
 .hero {
     background: url('hero.jpg') no-repeat center center/cover;
     height: 100vh;
-    color: #fff;
+    color: #0d0505;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,7 +143,7 @@ footer {
     display: inline-block;
     padding: 10px 20px;
     background-color: #007bff;
-    color: #fff;
+    color: #100808;
     text-decoration: none;
     border: none;
     border-radius: 5px;
@@ -151,4 +152,7 @@ footer {
 }
 .hero-content .btn:hover {
     background-color: #0056b3;
+}
+#home{
+    color: #0d0505;
 }

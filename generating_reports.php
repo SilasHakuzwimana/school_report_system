@@ -22,7 +22,7 @@
                 <tbody>
                     <?php
                     $conn = new mysqli('localhost', 'root', '', 'school_report');
-                    $result = $conn->query("SELECT students.name as student, subjects.name as subject, marks.mark 
+                    $result = $conn->query("SELECT students.name as student, subjects.name as subject, marks.mark
                                             FROM marks 
                                             JOIN students ON marks.student_id = students.id 
                                             JOIN subjects ON marks.subject_id = subjects.id");
@@ -37,7 +37,15 @@
                 </tbody>
             </table>
             <button onclick="window.print()" class="btn">Print Report</button>
+            <br>
+            <br>
+            <button type="button" onclick="redirectToDash();" class="btn">Back</button>
         </div>
     </div>
+    <script>
+        function redirectToDash() {
+            window.location.href="dashboard.php";
+        }
+    </script>
 </body>
 </html>

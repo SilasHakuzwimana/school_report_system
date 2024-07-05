@@ -65,8 +65,16 @@ $conn->close();
                     </select>
                 </div>
                 <button type="submit" class="btn">Register</button>
+                <br>
+                <br>
+                <button type="button" onclick="redirectToAdmin();" class="btn">Back</button>
             </form>
         </div>
     </div>
+    <script>
+        function redirectToAdmin() {
+            window.location.href="dashboard.php";
+        }
+    </script>
 </body>
 </html>

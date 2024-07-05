@@ -40,8 +40,16 @@
                     <input type="number" name="mark" id="mark" required placeholder="Enter mark">
                 </div>
                 <button type="submit" class="btn">Submit</button>
+                <br>
+                <br>
+                <button type="button" onclick="redirectToPage();" class="btn">Back</button>
             </form>
         </div>
     </div>
+    <script>
+        function redirectToPage() {
+            window.location.href="dashboard.php";
+        }
+    </script>
 </body>
 </html>

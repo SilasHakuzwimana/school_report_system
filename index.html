@@ -12,6 +12,12 @@
         html {
             scroll-behavior: smooth; /* Enable smooth scrolling for the whole document */
         }
+        #home{
+            color: rgb(12, 10, 10);
+        }
+        body{
+            background: url(images/gettyimages-RF654676191-612x612.jpg)  no-repeat center center/cover;
+        }
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -61,15 +67,15 @@
         }
         // Function to redirect to user home page
         function redirectToHome() {
-            window.location.href = "#home.php";
+            window.location.href = "home.php";
         }
         // Function to redirect to about page
         function redirectToAbout() {
-            window.location.href = "#about.php";
+            window.location.href = "#about";
         }
         // Function to redirect to contact page
         function redirectToContact() {
-            window.location.href = "#contact.php";
+            window.location.href = "contact.php";
         }
     </script>
 
@@ -84,7 +90,7 @@
             <ul>
                 <li><a href="javascript:void(0);" onclick="redirectToHome()"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="javascript:void(0);" onclick="redirectToAbout()"><i class="fas fa-info-circle"></i> About</a></li>
-                <li><a href="javascript:void(0);" onclick="redirectToContact"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="javascript:void(0);" onclick="redirectToContact();"><i class="fas fa-envelope"></i> Contact</a></li>
                 <li><a href="javascript:void(0);" onclick="redirectToAuthentication()" class="btn"><i class="fas fa-sign-in-alt"></i> Login</a></li>
             </ul>
         </nav>
@@ -92,7 +98,7 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Welcome to the School Report System</h1>
+            <h2>Welcome to the School Report Generation System</h2>
             <p>Efficiently manage and generate student reports</p>
             <a href="javascript:void(0);" class="btn" onclick="redirectToAuthentication()"><i class="fas fa-arrow-right"></i> Get Started</a>
         </div>

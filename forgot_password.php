@@ -86,14 +86,6 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forgot Password</title>
     <style>
-        /* Reset default margin and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            }
-
-        /* Basic styling for the page container */
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;

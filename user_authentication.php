@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <div class="login-container">
         <div class="login-form">
-            <h2>Login</h2>
+            <h2>School report generation Login</h2>
             <form method="POST" action="user_authentication.php">
                 <div class="input-group">
                     <i class="fas fa-user"></i>
